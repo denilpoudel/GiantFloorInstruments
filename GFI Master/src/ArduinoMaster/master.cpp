@@ -2,9 +2,11 @@
 #include <Wire.h>
 
 #define led 8
+#define led2 7
 
 void setup() {
   pinMode(led, OUTPUT);
+  pinMode(led2, OUTPUT);
   Wire.begin();
   Serial.begin(9600);
 }
@@ -23,6 +25,13 @@ void loop() {
       break;
       case 'd':
       digitalWrite(led, LOW);
+      break;
+      case 'f':
+      digitalWrite(led2, HIGH);
+      Serial.println('B');
+      break;
+      case 'g':
+      digitalWrite(led2,LOW);
       break;
     }
   }
