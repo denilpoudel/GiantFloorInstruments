@@ -10,9 +10,9 @@ void setup() {
 }
 
 void loop() {
-  Wire.requestFrom(8,6); // 6 bytes from address 8
+  Wire.requestFrom(8,1); // 6 bytes from address 8
 
-  if (Wire.available()){
+  if (Wire.available()){  
     char c = Wire.read();
     delay(2);
 
