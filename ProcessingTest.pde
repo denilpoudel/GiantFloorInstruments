@@ -53,4 +53,7 @@ void stop()
   player_1.close();
   player_2.close();
   player_3.close();
+  
+  minim.stop();
+  super.stop();
 }
