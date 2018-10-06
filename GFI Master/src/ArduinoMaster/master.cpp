@@ -19,11 +19,10 @@ void loop() {
     switch (c){
       case 'q':
       digitalWrite(led,HIGH);
-      Serial.println("HIGH");
+      Serial.println('A');
       break;
       case 'd':
       digitalWrite(led, LOW);
-      Serial.println("LOW");
       break;
     }
   }
