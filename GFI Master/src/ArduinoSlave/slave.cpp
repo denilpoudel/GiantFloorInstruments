@@ -20,22 +20,42 @@ void setup() {
 
 void loop() {
 delay (100);
-buttonvalue = digitalRead(b1);
-buttonvalue2 = digitalRead(b2);
+
 requestEvent();
+
 
 
 
 }
 
 void requestEvent(){
-
+  
+  buttonvalue = digitalRead(b1);
+  buttonvalue2 = digitalRead(b2);
 if (buttonvalue == HIGH)
   Wire.write("q");
-if (buttonvalue == LOW)
+else if (buttonvalue == LOW)
     Wire.write("d");
-if (buttonvalue2 == HIGH)
+else if (buttonvalue2 == HIGH)
   Wire.write("f");
-if (buttonvalue2 == LOW)
+else if (buttonvalue2 == LOW)
     Wire.write("g");
+/*
+if(digitalRead(b1) == HIGH)
+{
+  Wire.write("q");
+}
+if(digitalRead(b1) == LOW)
+{
+  Wire.write("d");
+}
+if(digitalRead(b2) == HIGH)
+{
+  Wire.write("f");
+}
+if(digitalRead(b2) == LOW)
+{
+  Wire.write("g");
+}
+*/
 }
