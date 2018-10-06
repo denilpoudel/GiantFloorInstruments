@@ -13,6 +13,13 @@ Serial port;
 
 void setup()
 {
+ 
+ println(Serial.list());
+ minim = new Minim(this);
+ port = new Serial(this, Serial.list()[0], 9600);
+ 
+ frameRate(60);
+ 
  player_1 = minim.loadFile("tone1.mp3");
  player_2 = minim.loadFile("tone2.mp3");
  player_3 = minim.loadFile("tone3.mp3");
