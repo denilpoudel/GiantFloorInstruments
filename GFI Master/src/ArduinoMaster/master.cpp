@@ -22,6 +22,8 @@ void loop() {
       case 'q':
       digitalWrite(led,HIGH);
       Serial.println('A');
+      delay(1000);
+      digitalWrite(led, LOW);
       break;
       case 'd':
       digitalWrite(led, LOW);
@@ -29,6 +31,8 @@ void loop() {
       case 'f':
       digitalWrite(led2, HIGH);
       Serial.println('B');
+      delay(1000);
+      digitalWrite(led2,LOW);
       break;
       case 'g':
       digitalWrite(led2,LOW);
