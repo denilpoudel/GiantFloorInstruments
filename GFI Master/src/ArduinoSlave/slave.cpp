@@ -4,12 +4,7 @@
 #define b1 6
 #define b2 3
 
-//int buttonvalue = 0;
-// int buttonvalue2 = 0;
-
-
 void requestEvent();
-
 
 void setup() {
   pinMode(b1, INPUT);
@@ -30,34 +25,11 @@ void requestEvent(){
 while(digitalRead(b1) == HIGH)
   {
     Wire.write("q");
-
   }
 
 while(digitalRead(b2) == HIGH)
 {
     Wire.write("f");
-
 }
 
-
-
-
-/*
-if(digitalRead(b1) == HIGH)
-{
-  Wire.write("q");
-}
-if(digitalRead(b1) == LOW)
-{
-  Wire.write("d");
-}
-if(digitalRead(b2) == HIGH)
-{
-  Wire.write("f");
-}
-if(digitalRead(b2) == LOW)
-{
-  Wire.write("g");
-}
-*/
 }
