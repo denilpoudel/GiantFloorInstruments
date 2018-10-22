@@ -1,4 +1,4 @@
-#include <Arduino.h>  // Only used for on ATOM
+#include <Arduino.h>  // Only used for on ATOM ide
 
 
 //  This is the LED pins, you can use Analog as Digital Pins
