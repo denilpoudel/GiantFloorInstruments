@@ -3,7 +3,7 @@
 
 //  This is the LED pins, you can use Analog as Digital Pins
 //  The order of the LED pins corresponds to the order it should be wired in the keyboard
-const int ledpin[] = {A0,A1,A2,A3,A5,A6,A7,13,12,11,10,9,8,7,6,5,4,3,2,1};
+const int ledpin[] = {A0,A1,A2,A3,A4,A5,A6,A7,13,12,11,10,9,8,7,6,5,4,3,2,1};
 
 // This the button pins, the order of the button pins corresponds to the order it should be wired on the keyboard
 const int button[] = {22,23,24,25,26,27,28,29,30,32,34,36,38,40,42,44,46,48,50,52};
@@ -238,5 +238,5 @@ if (bval[19] != lastbval[19]){
  lastbval[17] = bval[17];
  lastbval[18] = bval[18];
  lastbval[19] = bval[19];
- 
+
 }
