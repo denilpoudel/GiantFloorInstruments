@@ -18,6 +18,12 @@ AudioSample Note_A;
 AudioSample Note_A_sharp;
 AudioSample Note_B;
 
+AudioSample Note_Cn;
+AudioSample Note_Cn_sharp;
+AudioSample Note_Dn;
+AudioSample Note_Dn_sharp;
+AudioSample Note_En;
+
 //makes sure that the song is only played once to the player
 boolean playOnce;
 
@@ -60,8 +66,14 @@ void setup()
   Note_A = minim.loadSample("A4.mp3"); //left
   Note_A_sharp = minim.loadSample("Bb4.mp3"); //left
   Note_B = minim.loadSample("B4.mp3");
+  
+  Note_Cn = minim.loadSample("C5.mp3"); //left
+  Note_Cn_sharp = minim.loadSample("Db5.mp3");
+  Note_Dn = minim.loadSample("D5.mp3"); //left
+  Note_Dn_sharp = minim.loadSample("Eb5.mp3"); //middle
+  Note_En = minim.loadSample("E5.mp3"); //left
 
-  arr = new AudioSample[12];
+  arr = new AudioSample[17];
   notes = new ArrayList<Integer>();
   userNotes = new ArrayList<Integer>();
   
@@ -70,6 +82,7 @@ void setup()
   userNotes.add(3);
   userNotes.add(4);
   userNotes.add(5);
+  
   arr[0] = Note_C; 
   arr[1] = Note_C_sharp; 
   arr[2] = Note_D; 
@@ -82,6 +95,11 @@ void setup()
   arr[9] = Note_A;
   arr[10] = Note_A_sharp;
   arr[11] = Note_B;
+  arr[12] = Note_Cn;
+  arr[13] = Note_Cn_sharp; 
+  arr[14] = Note_Dn; 
+  arr[15] = Note_Dn_sharp;
+  arr[16] = Note_En;
   
   playOnce = false;
   
